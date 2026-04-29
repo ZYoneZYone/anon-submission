@@ -39,7 +39,7 @@ python main_results/standalone/addt_main.py --dataset cifar10 --query 30000
 
 **Plug-in** (QEDG pre-trained substitute + synthetic pool → HADR + DGDT post-training).
 
-Plug-in mode requires first running QEDG's original implementation (generator training + query-based pool construction + substitute pre-training) to produce the substitute model and synthetic image pool. Place the resulting artifacts under `./baseline/QEDG/` (see [Baseline Data](#baseline-data)), then run:
+Plug-in mode requires first running QEDG's original implementation (generator training + query-based pool construction + substitute pre-training) to produce the substitute model and synthetic image pool. Place the resulting artifacts under `./baseline/QEDG/`, then run:
 
 ```bash
 # MNIST (20K queries)
