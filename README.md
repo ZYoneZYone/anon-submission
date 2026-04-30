@@ -55,19 +55,18 @@ python main_results/plugin/qedg/addt_qedg_posttrain_zeroquery_svhn_asr.py
 python main_results/plugin/qedg/addt_qedg_posttrain_zeroquery_cifar10_asr.py
 ```
 
-## Reproducing Experiments
+## Experiments
 
 All scripts follow a unified CLI: `--dataset {mnist|fmnist|svhn|cifar10} --target_arch {resnet34|resnet18}`.
 
-| Section | Experiment | Directory |
-|---------|-----------|-----------|
-| §5.2 | Main results | `main_results/` |
-| §5.3.1 | Component contributions | `ablation_analysis/component_contributions/` |
-| §5.3.2 | Multi-view decomposition | `ablation_analysis/multiview_decomposition/` |
-| §5.3.3 | Gradient decoupling | `ablation_analysis/gradient_decoupling/` |
-| §5.4.1 | Gradient decay factor | `parameter_analysis/gradient_decay/` |
-| §5.4.2 | EMA momentum | `parameter_analysis/ema_momentum/` |
-| §5.5 | Target model approximation | `target_model_approximation/` |
+| Experiment | Directory |
+|-----------|-----------|
+| Main results | `main_results/` |
+| Component contributions | `ablation_analysis/component_contributions/` |
+| Multi-view decomposition | `ablation_analysis/multiview_decomposition/` |
+| Gradient decay factor | `parameter_analysis/gradient_decay/` |
+| EMA momentum | `parameter_analysis/ema_momentum/` |
+| Target model approximation | `target_model_approximation/` |
 
 ## Baseline Data
 
@@ -92,7 +91,6 @@ opensource/
 ├── ablation_analysis/
 │   ├── component_contributions/
 │   ├── multiview_decomposition/
-│   └── gradient_decoupling/
 ├── parameter_analysis/
 │   ├── gradient_decay/
 │   └── ema_momentum/
@@ -100,4 +98,3 @@ opensource/
     ├── agreement/
     └── js_divergence/
 ```
-
